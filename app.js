@@ -4,7 +4,12 @@ const exphbs = require('express-handlebars')
 
 const app = express();
 
-// route setting
+
+// fixing 401 problem
+
+
+
+// route setting 
 app.get('/',(req, res) => {
     res.render('index');
   })
@@ -26,6 +31,7 @@ app.use(express.json({extented: false}));
 // Define Routes
 app.use('/', require('./routes/index'));
 app.use('/api/url', require('./routes/url'));
+
 
 
 

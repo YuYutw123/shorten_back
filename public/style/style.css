@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap');
+
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Noto Sans TC', sans-serif;
+  line-height: 1.6rem;
+  background-color: #363d48;
+}
+.container{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  padding: 10px;
+  height: 100vh;
+  width: 100%;
+  position:relative;
+}
+
+.input-box{
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+
+}
+#input-bar{
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  background-color: #22a6b3;
+  padding-right: 40px;
+  color:#fff;
+}
+
+.btn-input{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;    
+  align-items: center;
+  border-style: none;
+  font-size: 16px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color:#e9edff ;
+  background-color:transparent;
+  pointer-events: painted;  
+}
+.btn-input:focus ~ #input-bar{
+  margin: 0 10px 0 0;
+  width: 700px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+#input-bar:focus{
+  margin: 0 10px 0 0;
+  letter-spacing: 1px;
+  width: 700px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.footer-text{
+  color: #ffffff;
+  position:absolute;
+bottom:0px;
+}
+
+.hidden{ 
+  display: none !important;
+}
+
+body, #header, #left-wing, #right-wing, #typing-area, #theme-area, #theme-center,
+#text-display, #redo-button, #footer, #highlight {
+  transition: all .4s ease-in-out 0s;
+
+}

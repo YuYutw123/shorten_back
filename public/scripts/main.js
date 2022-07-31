@@ -28,9 +28,6 @@ async function enterValue(value) {
     console.log('Error during fetch: ' + error.message);
   });
 
-
-
-
 }
 
 submitBtn.addEventListener("click", enterValue);

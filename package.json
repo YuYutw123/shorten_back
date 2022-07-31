@@ -23,7 +23,7 @@
         "valid-url": "^1.0.9"
     },
     "devDependencies": {
-        "nodemon": "^2.0.19",
-        "babel-cli": "^6.6.5"
+        "babel-cli": "^6.6.5",
+        "nodemon": "^2.0.19"
     }
 }

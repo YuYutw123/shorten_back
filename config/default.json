@@ -1,4 +1,4 @@
 {
     "mongoURI": "mongodb+srv://yu:yuyu123@cluster0.gefb2cc.mongodb.net/?retryWrites=true&w=majority",
-    "baseUrl": "http://shorten-url-emj.pages.dev"
+    "baseUrl": "http://127.0.0.1:5000"
 }

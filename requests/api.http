@@ -1,6 +1,0 @@
-POST http://localhost:5000/api/url/shorten
-Content-Type: application/json
-
-{
-  "longUrl": "https://www.youtube.com/watch?v=KTZ-y85Erus&list=RDMM&index=7&ab_channel=%E3%83%A8%E3%83%AB%E3%82%B7%E3%82%AB%2Fn-bunaOfficial"
-}

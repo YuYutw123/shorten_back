@@ -2,22 +2,23 @@ const express = require('express');
 const connectDB = require('./config/db');
 const exphbs = require('express-handlebars')
 
+
 const app = express();
 
 
 // route setting 
 app.get('/',(req, res) => {
-    res.render('index');
-  })
+  res.render('index');
+})
 
 
-// setting static files
-app.use(express.static(__dirname + '/public'));
-
-//setting template engine
-app.engine('handlebars', exphbs.engine('defaultLayout: index'))
+// setting template engine
+app.engine('handlebars', exphbs.engine('defaultLayout: main'))
 app.set('view engine', 'handlebars')
 
+let cors = require('cors');
+
+app.use(cors());
 
 //Connect to database
 connectDB();

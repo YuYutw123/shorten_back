@@ -29,12 +29,13 @@ router.post('/shorten', async (req,res) => {
                 res.json(url);
             } else {
                 const shortUrl = baseUrl + '/' + urlCode;
-
+                const access_acc = "Access-Control-Allow-Origin: https://yuyutw123.github.io/short-front/";
                 url = new Url({
                     longUrl,
                     shortUrl,
                     urlCode,
-                    date: new Date()
+                    date: new Date(),
+                    access_acc
                 });
 
                 await url.save();

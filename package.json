@@ -4,6 +4,7 @@
     "description": "",
     "main": "indes.js",
     "scripts": {
+        "babel-version": "babel --version",
         "start": "node index",
         "dev": "nodemon index",
         "build": "babel index.js --out-dir dist"
@@ -22,6 +23,7 @@
         "valid-url": "^1.0.9"
     },
     "devDependencies": {
-        "nodemon": "^2.0.19"
+        "nodemon": "^2.0.19",
+        "babel-cli": "^6.6.5"
     }
 }

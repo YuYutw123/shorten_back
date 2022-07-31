@@ -5,10 +5,6 @@ const exphbs = require('express-handlebars')
 const app = express();
 
 
-// fixing 401 problem
-
-
-
 // route setting 
 app.get('/',(req, res) => {
     res.render('index');

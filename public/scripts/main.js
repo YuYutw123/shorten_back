@@ -21,13 +21,20 @@ async function enterValue(value) {
   }).then(function(response){
     return response.json();
   }).then(function(response){
-    let link= document.getElementById('output').href = response.shortUrl;
-    let result = document.getElementById('output').textContent = response.shortUrl;
+    let result = document.getElementById('output').value = response.shortUrl;
   })
   .catch(function(error){
     console.log('Error during fetch: ' + error.message);
   });
 
+}
+
+function copyInput() {
+  var copyText = document.getElementById("output");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  alert("已複製" + copyText.value);
 }
 
 submitBtn.addEventListener("click", enterValue);

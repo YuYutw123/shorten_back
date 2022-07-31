@@ -5,7 +5,8 @@
     "main": "indes.js",
     "scripts": {
         "start": "node index",
-        "dev": "nodemon index"
+        "dev": "nodemon index",
+        "build": "babel src --out-dir dist"
     },
     "keywords": [],
     "author": "",
@@ -22,10 +23,5 @@
     },
     "devDependencies": {
         "nodemon": "^2.0.19"
-    },
-    "scripts": {
-        "dev": "webpack --config=Scripts/config/webpack.dev.js --watch",
-        "build": "webpack --config=Scripts/config/webpack.prod.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
-      }
+    }
 }

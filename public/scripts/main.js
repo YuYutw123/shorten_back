@@ -14,7 +14,7 @@ async function enterValue(value) {
 }
   console.log(str.longUrl);
 
-  fetch ("http://localhost:5000/api/url/shorten", {
+  fetch ("http://shorten-url-emj.pages.dev/api/url/shorten", {
     method: "POST",
     headers: headers,
     body: JSON.stringify(str)
